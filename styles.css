@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cce5ff; /* Biru pastel */
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    text-align: left;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* ======= Styling untuk Form Pemesanan ======= */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Membuat form sejajar di tengah */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Ukuran kotak form */
+    max-width: 350px; /* Maksimal lebar */
+    margin: 20px auto; /* Tengah */
+}
+
+/* ======= Label dengan Desain Rapi ======= */
+label {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ======= Input, Select, dan Textarea (Lebih Kecil & Rapi) ======= */
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 80%; /* Lebih kecil & rapi */
+    max-width: 250px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center; /* Membuat teks input lebih rapi */
+}
+
+/* ======= Tombol Submit (Lebih Keren) ======= */
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+    width: 80%;
+    max-width: 200px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ======= Responsiveness untuk HP ======= */
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        width: 85%;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Gambar di dalam card produk */
+.product img {
+    max-width: 100%; /* Gambar tidak lebih besar dari card */
+    height: auto;
+    max-height: 180px; /* Batasi tinggi gambar agar tidak terlalu besar */
+    object-fit: contain; /* Pastikan gambar tidak terpotong */
+    padding: 10px; /* Beri jarak agar tidak menempel ke tepi */
+    border-radius: 5px;
+}
+
+/* Untuk tampilan order card */
+.order-card img {
+    width: 80px; /* Ukuran kecil agar tidak mendominasi */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Jika ada class .product-card, bisa disesuaikan lebih lanjut */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    padding: 8px;
+}
